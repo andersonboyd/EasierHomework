@@ -5,8 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector</title>
+    <link rel="stylesheet" type="text/css" href="../CrystalCollector/reset.css">
+    <link rel="stylesheet" type="text/css" href="../CrystalCollector/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Crystal Collector!</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <p>
+                    Click the crystals to match the score! Each crystal is a random number.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="d-inline-flex justify-content-around align-items-center">
+                    <img id="ruby" src="images/ruby.jpg" alt="red">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="d-inline-flex justify-content-around align-items-center">
+                    <img id="emerald" src="images/emerald.jpg" alt="green">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="d-inline-flex justify-content-around align-items-center">
+                    <img id="sapphire" src="images/sapphire.jpg" alt="blue">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="d-inline-flex justify-content-around align-items-center">
+                    <img id="quartz" src="images/yellow.jpg" alt="yellow">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <h2>Score to match: <span id="scoreMatch"></span></h2>
+                <h2 class="text-left">Your score: <span id="score"></span></h2>
+            </div>
+            <div class="col-md-3">
+                <h3>Wins: <span id="wins"></span></h3>
+                <h3 class="text-left">Losses: <span id="losses"></span></h3>
+            </div>
+        </div>
+    </div>
+    <script src="../CrystalCollector/game.js" type="text/javascript"></script>
 </body>
 </html>
